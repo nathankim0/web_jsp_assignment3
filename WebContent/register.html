@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>register</title>
+<link rel="stylesheet" href="resources/book.css" type="text/css"></link>
+</head>
+<body>
+	<header>Book register</header>
+	<hr>
+	<div align="center">
+		<a href="http://localhost:8080/jinyeob_free/welcome.html"
+			target="_self">메인페이지 이동</a>
+		<form action="http://localhost:8080/jinyeob_free/BookServlet?key=join"
+			method="post">
+			<fieldset>
+				<legend>책 정보</legend>
+				<ul>
+					<li>책번호 : <input type="text" name="bookNo" autofocus required
+						placeholder="공백없이 입력하세요"></li>
+					<li>책이름 : <input type="text" name="bookname" required
+						placeholder="공백없이 입력하세요"></li>
+					<li>작가 : <input type="text" name="author" required
+						placeholder="공백없이 입력하세요"></li>
+					<li>대출여부 : <input type="radio" name="ischeck" value="0"
+						checked> X <input type="radio" name="ischeck" value="1">
+						O
+					</li>
+					<li>대출일 : <input type="date" name="checkDay"></li>
+				</ul>
+			</fieldset>
+			<br>
+			<fieldset>
+				<input type="submit" name="submit" value="보내기"> <input
+					type="reset" name="reset" value="다시 작성">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
